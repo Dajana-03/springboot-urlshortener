@@ -21,7 +21,7 @@ public class ShortenedUrl {
     private Instant createdAt;
     private Instant expiresAt;
     private long clickCount;
-    private boolean isDeleted = false;
+    private boolean isDeleted;
 
 
     public void refreshExpiration(Instant newExpiration) {
