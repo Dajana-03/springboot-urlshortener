@@ -18,7 +18,7 @@ public class ExpiredUrlCleaner {
 
     @Operation(
             summary = "Delete Expired Shortened URLs",
-            description = "Marks shortened URLs as deleted if their expiration time has passed. This operation is typically invoked automatically via a scheduled task."
+            description = "Marks shortened URLs as deleted if their expiration time has passed."
     )
     @Scheduled(fixedRate = 60000)
     public void cleanUp() {

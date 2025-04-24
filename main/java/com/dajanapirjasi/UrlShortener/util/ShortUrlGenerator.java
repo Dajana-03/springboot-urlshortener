@@ -14,7 +14,7 @@ public class ShortUrlGenerator {
     private static final int DEFAULT_LENGTH = 8;
     private static final SecureRandom SECURE_RANDOM = new SecureRandom();
 
-    private final Set<String> generatedCache = new HashSet<>(); // optional in-memory deduplication
+    private final Set<String> generatedCache = new HashSet<>();
 
 
     public String generate() {
